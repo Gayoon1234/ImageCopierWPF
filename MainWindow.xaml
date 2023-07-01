@@ -25,9 +25,13 @@
             <Button x:Name="btnFrom" Content="..." Margin="501,0,0,0" VerticalAlignment="Center" Height="18" Click="btnFrom_Click"/>
         </Grid>
         <Grid HorizontalAlignment="Left" Height="26" Margin="0,55,0,0" VerticalAlignment="Top" Width="513">
-            <TextBox x:Name="tbTo" HorizontalAlignment="Left" Margin="43,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="459"/>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="151*"/>
+                <ColumnDefinition Width="362*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="tbTo" HorizontalAlignment="Left" Margin="43,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="459" Grid.ColumnSpan="2"/>
             <Label x:Name="lblTo" Content="To" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="19,0,0,0"/>
-            <Button x:Name="btnTo" Content="..." Margin="501,0,0,0" VerticalAlignment="Center" Height="18" Click="btnTo_Click"/>
+            <Button x:Name="btnTo" Content="..." Margin="350,0,0,0" VerticalAlignment="Center" Height="18" Click="btnTo_Click" Grid.Column="1"/>
         </Grid>
         <Image HorizontalAlignment="Left" Height="33" Margin="237,4,0,0" VerticalAlignment="Top" Width="100" Source="/Title.png"/>
         <Button x:Name="btnLoad" Content="Load" Margin="521,36,12,0" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="35" BorderBrush="{x:Null}" Foreground="Black" Background="#FFE36AFF" FontWeight="Bold">
@@ -37,21 +41,38 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Image HorizontalAlignment="Left" Height="247" Margin="68,102,0,0" VerticalAlignment="Top" Width="491"/>
-        <Button x:Name="btnPrev" Content="     Prev&#xD;&#xA;(Left Arrow)" Margin="68,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="59" BorderBrush="{x:Null}" Foreground="Black" Background="#FFCA422C" FontWeight="Bold" HorizontalAlignment="Left" Width="118" Click="btnPrev_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="btnNext" Content="      Next&#xA;(Right Arrow)" Margin="443,365,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="59" BorderBrush="{x:Null}" Foreground="Black" Background="#FF6AFF81" FontWeight="Bold" HorizontalAlignment="Left" Width="118" Click="btnPrev_Click">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </Button.Resources>
-        </Button>
+        <Image HorizontalAlignment="Left" Height="247" Margin="64,108,0,0" VerticalAlignment="Top" Width="497"/>
+        <Grid HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Width="502">
+            <Button x:Name="btnPrev" Content="     Prev&#xA;(Left Arrow)" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="59" BorderBrush="{x:Null}" Foreground="Black" Background="#FFCA422C" FontWeight="Bold" HorizontalAlignment="Left" Width="118" Click="btnPrev_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btnNext" Content="      Next&#xA;(Right Arrow)" Margin="384,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="59" BorderBrush="{x:Null}" Foreground="Black" Background="#FF6AFF81" FontWeight="Bold" HorizontalAlignment="Left" Width="118" Click="btnPrev_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="btnNext_Copy" Content=" Copy&#xA;(Space)" VerticalAlignment="Top" RenderTransformOrigin="-0.519,0.603" Height="59" BorderBrush="{x:Null}" Foreground="Black" Background="#FFFFF26A" FontWeight="Bold" HorizontalAlignment="Center" Width="246" Click="btnPrev_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="525" Margin="54,84,0,0">
+            <Label x:Name="lblTo_Copy" Content="Image" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" RenderTransformOrigin="1.217,0.502"/>
+            <TextBox HorizontalAlignment="Left" Margin="44,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="52"/>
+            <Label x:Name="lblTo_Copy1" Content="/4" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="96,0,0,0" RenderTransformOrigin="1.217,0.502"/>
+            <Label x:Name="lblTo_Copy2" Content="ImageName.jpg" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="425,0,0,0" RenderTransformOrigin="1.217,0.502"/>
+
+        </Grid>
 
     </Grid>
 </Window>
