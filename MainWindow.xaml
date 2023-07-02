@@ -24,7 +24,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Grid HorizontalAlignment="Left" Height="26" Margin="4,31,0,0" VerticalAlignment="Top" Width="509">
-            <TextBox x:Name="tbFrom" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBox" Width="459" VerticalAlignment="Center" Margin="39,0,0,0"/>
+            <TextBox x:Name="tbFrom" HorizontalAlignment="Left" TextWrapping="Wrap" Width="459" VerticalAlignment="Center" Margin="39,0,0,0"/>
             <Label x:Name="lblFrom" Content="From" HorizontalAlignment="Left" Foreground="White" FontWeight="Bold" VerticalAlignment="Center"/>
             <Button x:Name="btnFrom" Content="..." Height="18" Click="btnFrom_Click" VerticalAlignment="Center" Margin="497,0,0,0"/>
         </Grid>
@@ -34,7 +34,7 @@
                 <ColumnDefinition Width="362*"/>
             </Grid.ColumnDefinitions>
             <Grid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="26" Margin="19,0,0,0" VerticalAlignment="Center" Width="494">
-                <TextBox x:Name="tbTo" HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="459"/>
+                <TextBox x:Name="tbTo" HorizontalAlignment="Left" Margin="24,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="459"/>
                 <Label x:Name="lblTo" Content="To" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold"/>
                 <Button x:Name="btnTo" Content="..." Margin="482,0,0,0" VerticalAlignment="Center" Height="18" Click="btnTo_Click"/>
             </Grid>
@@ -76,7 +76,7 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="525" Margin="54,6,0,0" Grid.Row="1">
             <Label x:Name="lblTo_Copy" Content="Image" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" RenderTransformOrigin="1.217,0.502"/>
-            <TextBox x:Name="tbImageNum" HorizontalAlignment="Left" Margin="44,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="52" LostFocus="tbImageNum_LostFocus"/>
+            <TextBox x:Name="tbImageNum" HorizontalAlignment="Left" Margin="44,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="52" LostFocus="tbImageNum_LostFocus"/>
             <Label x:Name="lblImageCount" Content="/4" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="96,0,0,0" RenderTransformOrigin="1.217,0.502"/>
             <Label x:Name="lblImageName" Content="ImageName.jpg" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Margin="137,0,0,0" RenderTransformOrigin="1.217,0.502" HorizontalContentAlignment="Right" Width="388"/>
 
