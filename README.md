@@ -2,7 +2,7 @@
 
 > WPF .NET 6.0 GUI app that lets you traverse images under directory A, and copy them into directory B if desired. Tested with up to 2000 images.
 
-This is a WFP version of [ImageCopier](https://github.com/Gayoon1234/ImageCopier)
+This is a WPF version of [ImageCopier](https://github.com/Gayoon1234/ImageCopier)
 
 # Instructions
 1. Run the app in Visual Studio code
